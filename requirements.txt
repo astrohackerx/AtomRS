@@ -1,0 +1,7 @@
+solana==0.34.3
+solders==0.21.0
+python-dotenv==1.0.1
+base58==2.1.1
+supabase==2.7.4
+websockets==11.0.3
+realtime==2.0.2

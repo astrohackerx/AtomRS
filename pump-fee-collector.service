@@ -1,0 +1,13 @@
+[Unit]
+Description=AtomID Reward Distributor Service
+After=network.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/root/atomrs
+ExecStart=/root/atomrs/venv/bin/python3 /root/atomrs/automain.py
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

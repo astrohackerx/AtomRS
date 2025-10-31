@@ -1,0 +1,11 @@
+[Unit]
+Description=Run AtomID Reward Distributor every hour
+Requires=pump-fee-collector.service
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1h
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target
